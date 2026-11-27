@@ -8,7 +8,7 @@ class Hospital:
         self.appointments = []
 
     def addDoctor(self, doctor):
-        pass
+        self.doctors.append(doctor)
 
     def addPatient(self, patient):
         pass
