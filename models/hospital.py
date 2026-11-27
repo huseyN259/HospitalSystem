@@ -14,7 +14,8 @@ class Hospital:
         self.patients.append(patient)
 
     def showDoctors(self):
-        pass
+        for doctor in self.doctors:
+            print(doctor.showInfo())
 
     def showPatients(self):
         pass
