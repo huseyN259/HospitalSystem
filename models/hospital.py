@@ -18,7 +18,8 @@ class Hospital:
             print(doctor.showInfo())
 
     def showPatients(self):
-        pass
+        for patient in self.patients:
+            print(patient.showInfo())
 
     def createAppointment(self, doctorID, patientID, date):
         pass
