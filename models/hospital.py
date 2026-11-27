@@ -22,7 +22,31 @@ class Hospital:
             print(patient.showInfo())
 
     def createAppointment(self, doctorID, patientID, date):
-        pass
+        doctor = None
+        patient = None
+
+        for doctorItem in self.doctors:
+            if doctorItem.doctorID == doctorID:
+                doctor = doctorItem
+                break
+
+        for patientItem in self.patients:
+            if patientItem.patientID == patientID:
+                patient = patientItem
+                break
+
+        if doctor is None:
+            print(f"Doctor with ID {doctorID} not found")
+            return None
+
+        if patient is None:
+            print(f"Patient with ID {patientID} not found")
+            return None
+
+        appointmentID = len(self.appointments) + 1
+        appointment = Appointment(appointmentID, doctor, patient, date)
+        self.appointments.append(appointment)
+        return appointment
 
     def showAppointments(self):
         pass
