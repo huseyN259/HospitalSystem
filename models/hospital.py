@@ -11,7 +11,7 @@ class Hospital:
         self.doctors.append(doctor)
 
     def addPatient(self, patient):
-        pass
+        self.patients.append(patient)
 
     def showDoctors(self):
         pass
