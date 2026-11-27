@@ -8,4 +8,7 @@ class Doctor(Person):
         self.experience = experience
 
     def showInfo(self):
-        pass
+        return (
+            f"Doctor #{self.doctorID}: {super().showInfo()} | "
+            f"Specialization: {self.specialization} | Experience: {self.experience} years"
+        )
