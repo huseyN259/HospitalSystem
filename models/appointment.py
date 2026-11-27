@@ -7,8 +7,8 @@ class Appointment():
 
     def showInfo(self):
         return (
-            f"Appointment #{self.appointmentID}: {self.date} | "
+            f"Appointment {self.appointmentID}: {self.date} "
             f"Doctor: {self.doctor.name} {self.doctor.surname} "
-            f"({self.doctor.specialization}) | "
+            f"({self.doctor.specialization}) "
             f"Patient: {self.patient.name} {self.patient.surname}"
         )
