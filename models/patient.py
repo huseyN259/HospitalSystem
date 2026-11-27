@@ -15,7 +15,7 @@ class Patient(Person):
         )
 
     def getMedicalHistory(self):
-        pass
+        return self.__medicalHistory
 
-    def updateMedicalHistory(self):
-        pass
+    def updateMedicalHistory(self, newHistory):
+        self.__medicalHistory = newHistory
