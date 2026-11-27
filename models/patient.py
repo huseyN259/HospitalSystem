@@ -8,7 +8,11 @@ class Patient(Person):
         self.__medicalHistory = medicalHistory # private
 
     def showInfo(self):
-        pass
+        return (
+            f"Patient #{self.patientID}: {super().showInfo()} | "
+            f"Blood Group: {self._bloodGroup} | "
+            f"Medical History: {self.__medicalHistory}"
+        )
 
     def getMedicalHistory(self):
         pass
