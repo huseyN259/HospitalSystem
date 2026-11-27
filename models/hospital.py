@@ -49,4 +49,5 @@ class Hospital:
         return appointment
 
     def showAppointments(self):
-        pass
+        for appointment in self.appointments:
+            print(appointment.showInfo())
