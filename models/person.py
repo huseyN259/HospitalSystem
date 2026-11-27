@@ -6,4 +6,4 @@ class Person:
         self.phone = phone
 
     def showInfo(self):
-        pass
+        return f"{self.name} {self.surname}, Age: {self.age}, Phone: {self.phone}"
